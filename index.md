@@ -8,7 +8,7 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 <!--
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 -->
-![Headstone Image](/branding/Rushil.HEIC)
+![Headstone Image](/BSE_Template_Portfolio/main/branding/Rushil.HEIC)
 <!--
 # Final Milestone
 
