@@ -85,3 +85,41 @@ One of the best parts about Github is that you can view how other people set up 
 
 To watch the BSE tutorial on how to create a portfolio, click here.
 -->
+
+# Starter Project
+
+```c++
+// constants because they are pin numbers
+const int BUTTON_PIN = 7;  // the number of the pushbutton pin
+const int LED_PIN =  9;   // the number of the LED pin
+const int LED_PIN2 = 10; // number of LED pin # 2
+
+// buttonstate changes
+int buttonState = 0;   // variable for reading the pushbutton status
+
+void setup() {
+  // initialize the LED pins as outputs:
+  pinMode(LED_PIN, OUTPUT);
+  pinMode(LED_PIN2, OUTPUT);
+  // initializing the pushbutton as an input device
+  // the pull-up input pin will be HIGH when the button is pressed and LOW when the button is not pressed.
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
+}
+
+void loop() {
+  // reads the state of button (pushed/not pushed) --> HIGH/LOW
+  buttonState = digitalRead(BUTTON_PIN);
+  
+  // control LED according to the state of button
+  if(buttonState == LOW)         // If button is pressed
+  {
+    digitalWrite(LED_PIN, HIGH); // turn on LED # 1
+    digitalWrite(LED_PIN2, LOW); // turn on LED # 2
+  }
+  else                           // otherwise, button is not pressed
+  {
+    digitalWrite(LED_PIN, LOW);  // turn off LED # 1
+    digitalWrite(LED_PIN2, HIGH); // turn on LED # 2
+  }
+}
+```
