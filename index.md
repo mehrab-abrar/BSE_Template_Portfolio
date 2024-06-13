@@ -88,6 +88,9 @@ To watch the BSE tutorial on how to create a portfolio, click here.
 
 # Starter Project
 
+This project uses a pushbutton to toggle between two LED lights. The pushbutton is connected to a 5V pin, a ground through a resistor, and a digital pin. The digital pin allows for the pushbutton to be used as an input mechanism, as connecting the pushbutton to the digital pin allows for the pushbutton's state (pushed or not) to be continuously read. There are 2 LEDs which both have the same setup in terms of connection to the Arduino board. Each LED has a direct connection to a ground, and then through a resistor, connects to a digital pin. These digital pins allow the LED's state (on or off) to be controlled by the code. All of the cables, resistors, LEDs, and pushbuttons have been soldered into the protoshield. For items that aren't connected in the protoshield (which has specific rows and columns that are automatically connected due to metal lining), solder is used to form those connections between the items. There are pins soldered into the protoshield that extend all analog, digital, etc pins from the Arduino board. 
+
+The code uses setup() to initialize the 2 LEDs as outputs and the pushbutton as an input. This is all done using their ports so the computer understands where the LEDs and pushbutton are. In loop() the button's current state is read, and if it is not pressed (which returns LOW in digitalRead()) then the first LED is turned on and the second LED is turned off. Otherwise, if it is pressed (which returns HIGH in digitalRead()), then the first LED is turned off and the second LED is turned on.
 ```c++
 // constants because they are pin numbers
 const int BUTTON_PIN = 7;  // the number of the pushbutton pin
@@ -111,12 +114,12 @@ void loop() {
   buttonState = digitalRead(BUTTON_PIN);
   
   // control LED according to the state of button
-  if(buttonState == LOW)         // If button is pressed
+  if(buttonState == LOW)         // If button is not pressed
   {
     digitalWrite(LED_PIN, HIGH); // turn on LED # 1
     digitalWrite(LED_PIN2, LOW); // turn on LED # 2
   }
-  else                           // otherwise, button is not pressed
+  else                           // otherwise, button is pressed
   {
     digitalWrite(LED_PIN, LOW);  // turn off LED # 1
     digitalWrite(LED_PIN2, HIGH); // turn on LED # 2
