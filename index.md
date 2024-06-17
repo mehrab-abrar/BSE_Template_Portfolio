@@ -99,7 +99,9 @@ The code uses setup() to initialize the 2 LEDs as outputs and the pushbutton as 
 // constants because they are pin numbers
 const int BUTTON_PIN = 7;  // the number of the pushbutton pin
 const int LED_PIN =  9;   // the number of the LED pin
-const int LED_PIN2 = 10; // number of LED pin # 2
+const int LED_PIN2 = 13; // number of LED pin # 2
+bool isToggled = false; // checks which LED should be turned on (False -> LED 1, True -> LED 2)
+bool alreadyRan = false; // checks if loop is running multiple times on one button press so lights don't continuously switch
 
 // buttonstate changes
 int buttonState = 0;   // variable for reading the pushbutton status
@@ -118,15 +120,24 @@ void loop() {
   buttonState = digitalRead(BUTTON_PIN);
   
   // control LED according to the state of button
-  if(buttonState == LOW)         // If button is not pressed
+  if(buttonState == HIGH && !alreadyRan)         // If button is not pressed
   {
-    digitalWrite(LED_PIN, HIGH); // turn on LED # 1
-    digitalWrite(LED_PIN2, LOW); // turn on LED # 2
+    isToggled = !isToggled; // swaps toggle to other side
+    if (isToggled)
+    {
+      digitalWrite(LED_PIN2, HIGH); // turn on LED # 2
+      digitalWrite(LED_PIN, LOW); // turn off LED # 1
+    }
+    else
+    {
+      digitalWrite(LED_PIN, HIGH); // turn on LED # 1
+      digitalWrite(LED_PIN2, LOW); // turn off LED # 2
+    }
+    alreadyRan = true; // This will make it so if statement isn't entered multiple times in one button press
   }
-  else                           // otherwise, button is pressed
+  else if (buttonState == LOW)
   {
-    digitalWrite(LED_PIN, LOW);  // turn off LED # 1
-    digitalWrite(LED_PIN2, HIGH); // turn on LED # 2
+    alreadyRan = false; // Allows if to be entered again since button has been released now
   }
 }
 ```
