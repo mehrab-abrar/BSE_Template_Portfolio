@@ -10,7 +10,7 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 -->
 
 <!-- Figure out images later -->
-![Headstone Image](ImLazyVex/BSE_Template_Portfolio/Rushil.jpg)
+![Headstone Image](ImLazyVex/BSE_Template_Portfolio/gh-pages/Rushil.jpg)
 
 
 <!--
