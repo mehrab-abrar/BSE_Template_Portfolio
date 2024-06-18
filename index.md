@@ -103,6 +103,10 @@ The code uses setup() to initialize the 2 LEDs as outputs and the pushbutton as 
 
 While soldering, a bit of the solder itself spilled onto the middle columns. This caused the entire circuit to short as the 5V and Ground sides were interacting with each other. Another challenge was getting the polarity of the LED correct. At the start, I put the LED the wrong way, not realizing this can cause it to not function. I had to desolder the LED and put it in a new spot, making sure it was placed the right way. An interesting problem I encountered near the end was using pin 13. Pin 13 controls the Arduino Board's LED no matter what, so when I used pin 13 for one of the LEDs, it was not being turned on, instead the board's LED was turning on. 
 
+<h3>What's Next</h3>
+
+In my main project, I will learn how to use and work with Raspberry Pi, and I will learn how to use the OpenAI API. I will figure out how to setup a Raspberry Pi and how to create circuits and code circuits for it.
+
 <h3>Code</h3>
 
 ```c++
