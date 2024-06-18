@@ -93,9 +93,17 @@ To watch the BSE tutorial on how to create a portfolio, click here.
 
 <iframe width="935" height="526" src="https://www.youtube.com/embed/4CdzAQ-fwT0" title="Rushil S.  Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<h3>Summary</h3>
+
 This project uses a pushbutton to toggle between two LED lights. The pushbutton is connected to a 5V pin, a ground through a resistor, and a digital pin. The digital pin allows for the pushbutton to be used as an input mechanism, as connecting the pushbutton to the digital pin allows for the pushbutton's state (pushed or not) to be continuously read. There are 2 LEDs which both have the same setup in terms of connection to the Arduino board. Each LED has a direct connection to a ground, and then through a resistor, connects to a digital pin. These digital pins allow the LED's state (on or off) to be controlled by the code. All of the cables, resistors, LEDs, and pushbuttons have been soldered into the protoshield. For items that aren't connected in the protoshield (which has specific rows and columns that are automatically connected due to metal lining), solder is used to form those connections between the items. There are pins soldered into the protoshield that extend all analog, digital, etc pins from the Arduino board. 
 
 The code uses setup() to initialize the 2 LEDs as outputs and the pushbutton as an input. This is all done using their ports so the computer understands where the LEDs and pushbutton are. In loop(), the button's current state (pressed or not) is read. Then an if statement checks if the button is being pressed and if this is the first time in the current button press that this if statement is being ran. Then the toggled is swapped (i.e. true -> false) so that based on the toggle, the right LED will be turned on and the right LED will be turned off. This creates a toggling motion for each button press. Finally, the boolean controlling whether the if-statement has already been ran in the button press is set to true, which stops the LEDs from infinitely toggling. Once the button is released (not being pressed), then the boolean controlling whether the if-statement has been ran is set to false so the next time the button is pressed, the LEDs can be toggled. 
+
+<h3>Challenges</h3>
+
+While soldering, a bit of the solder itself spilled onto the middle columns. This caused the entire circuit to short as the 5V and Ground sides were interacting with each other. Another challenge was getting the polarity of the LED correct. At the start, I put the LED the wrong way, not realizing this can cause it to not function. I had to desolder the LED and put it in a new spot, making sure it was placed the right way. An interesting problem I encountered near the end was using pin 13. Pin 13 controls the Arduino Board's LED no matter what, so when I used pin 13 for one of the LEDs, it was not being turned on, instead the board's LED was turning on. 
+
+<h3>Code</h3>
 
 ```c++
 // constants because they are pin numbers
