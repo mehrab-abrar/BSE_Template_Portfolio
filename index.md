@@ -44,9 +44,15 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="935" height="526" src="https://www.youtube.com/embed/qS4kptm6oVI" title="Rushil S. First Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-In my project, I use a USB microphone and a USB speaker. I also have a Raspberry Pi (4) and an HDMI Video Capture device. I use a PiSwitch to control the on and off of the Raspberry Pi as it can go between the power supply and the Raspberry Pi itself. The USB microphone and speaker both connect to the Raspberry Pi and in the future will be used to capture user audio and provide a response. The HDMI Video Capture device is connected to both the Raspberry Pi and the computer. This is so that the Raspberry Pi's interface can be displayed on OBS, which allows for coding the Raspberry Pi, installing dependencies on it, etc. 
+<h3>Summary</h3>
 
-So far I have generated an OpenAI API key for future use when I create the code for the Voice Assistant. I have also installed the OS onto the microSD card for the Raspberry Pi. A big challenge I faced while setting up the Raspberry Pi was the OS on the mircoSD card corrupting. I closed OBS at a point without shutting down my Raspberry Pi and somehow the OS corrupted so I had to restart and reinstall the Raspberry Pi OS onto the microSD card.
+In my project, I use a USB microphone and a USB speaker. I also have a Raspberry Pi (4) and an HDMI Video Capture device. I use a PiSwitch to control the on and off of the Raspberry Pi as it can go between the power supply and the Raspberry Pi itself. The USB microphone and speaker both connect to the Raspberry Pi and in the future will be used to capture user audio and provide a response. The HDMI Video Capture device is connected to both the Raspberry Pi and the computer. This is so that the Raspberry Pi's interface can be displayed on OBS, which allows for coding the Raspberry Pi, installing dependencies on it, etc. So far I have generated an OpenAI API key for future use when I create the code for the Voice Assistant. I have also installed the OS onto the microSD card for the Raspberry Pi. 
+
+<h3>Challenges</h3>
+
+A big challenge I faced while setting up the Raspberry Pi was the OS on the mircoSD card corrupting. I closed OBS at a point without shutting down my Raspberry Pi and somehow the OS corrupted so I had to restart and reinstall the Raspberry Pi OS onto the microSD card. Another problem I had was the PiSwitch not working, but eventually the PiSwitch fixed itself. My last challenge, which wasn't too big, was related to using OBS as the Raspberry Pi's interface sometimes got stuck on booting, but after the reinstallations of the OS due to the other OBS prblem, the booting problem also was fixed.
+
+<h3>What's Next</h3>
 
 In the future I will install the dependencies onto the Raspberry Pi and build the circuit for the voice assistant which will include an LED to turn on and off using the voice assistant. I will also create the code much later on using the speech recognition libraries and other Raspberry Pi related libraries.
 
