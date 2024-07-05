@@ -14,8 +14,6 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 <!--
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="935" height="526" src="https://www.youtube.com/embed/yWZoRjWE-IM" title="Rushil S. Third Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
@@ -27,8 +25,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 -->
 
 # Second Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="935" height="526" src="https://www.youtube.com/embed/CYtspTGLkoA" title="Rushil S.  Second Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
