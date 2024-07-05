@@ -9,7 +9,6 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 -->
 
-<!-- Figure out images later -->
 <img src="Rushil.jpg" width="300" height="400" />
 
 <!--
@@ -55,6 +54,8 @@ A big challenge I faced while setting up the Raspberry Pi was the OS on the mirc
 <h3>What's Next</h3>
 
 In the future I will install the dependencies onto the Raspberry Pi and build the circuit for the voice assistant which will include an LED to turn on and off using the voice assistant. I will also create the code much later on using the speech recognition libraries and other Raspberry Pi related libraries.
+
+<img src="voiceassistantschematic.png" width="300" height="400" />
 
 <!--
 # Schematics 
