@@ -16,7 +16,7 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="935" height="526" src="https://www.youtube.com/embed/yWZoRjWE-IM" title="Rushil S. Third Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
@@ -24,20 +24,28 @@ For your final milestone, explain the outcome of your project. Key details to in
 - A summary of key topics you learned about
 - What you hope to learn in the future after everything you've learned at BSE
 
-
+-->
 
 # Second Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="935" height="526" src="https://www.youtube.com/embed/CYtspTGLkoA" title="Rushil S.  Second Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
--->
+<h3>Summary</h3>
+
+During my second milestone, I added the entire circuitry. This includes a relay module connected to the Raspberry Pi which recieves the high/low signals from the Raspberry Pi. The relay module controls electricity flow from the battery pack back to the LED circuit on the breadboard. Essentially if it's high, then electricity is flowed back into the LED circuit from the battery pack, but if it's low, then the LED circuit doesn't get and power back from the battery pack. The LED is connected to resistors to prevent it from taking too much voltage in, as the battery pack provides 6V of power.
+
+The simplicity at the core of the project constrasted to the complex errors that are outputted really suprise me. This is because you can find an error that doesn't seem to relate to anything on your project yet something totally random causes it. For example, I had a wire plugged into the wrong pin but an error related to my USB mic was being outputted. And this is all while you have only a few parts connected.
+
+<h3>Challenges</h3>
+
+One challenge I faced while building the circuitry was the LED frying continuously despite it being connected to a resistor that should've reduced the voltage coming towards the LED. What I didn't realize was that it was such a weak resistor that almost no power was being taken away from the circuit.
+Another problem I had was understanding the relay module as I had never seen one before and online tutorials/descriptions provided very little to no explanation as to how to use one. 
+
+<h3>What's Next</h3>
+
+Next I am going to be making the code for my project to allow it to use the AI to generate responses based on the text it hears. I also want to make it commit actions based on certain keywords and phrases it hears such as "turn on the light" to turn on an LED on a breadboard.
 
 # First Milestone
 
