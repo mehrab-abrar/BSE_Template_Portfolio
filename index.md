@@ -55,7 +55,7 @@ A big challenge I faced while setting up the Raspberry Pi was the OS on the mirc
 
 In the future I will install the dependencies onto the Raspberry Pi and build the circuit for the voice assistant which will include an LED to turn on and off using the voice assistant. I will also create the code much later on using the speech recognition libraries and other Raspberry Pi related libraries.
 
-<img src="voiceassistantschematic.png" width="300" height="400" />
+<img src="voiceassistantschematic.png" width="600" height="400" />
 
 <!--
 # Schematics 
