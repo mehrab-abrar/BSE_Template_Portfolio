@@ -11,18 +11,25 @@ This project uses Rasberry Pi and ChatGPT to create a voice assistant. This voic
 
 <img src="Rushil.jpg" width="300" height="400" />
 
-<!--
 # Final Milestone
 
 <iframe width="935" height="526" src="https://www.youtube.com/embed/yWZoRjWE-IM" title="Rushil S. Third Milestone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+<h3>Summary</h3>
 
--->
+I created all the code using libraries like SpeechRecognition, openai, lgpio, and pyttsx3. SpeechRecognition was used to capture user speech from the USB microphone and then turn it to text. After this multiple if and elif statements check for certain keywords and phrases that may be in the user's inputted speech. If "turn on/off the light" comes from the input, then a light on a breadboard is controlled using the lgpio module to turn on and off. If the name "Tom" is said, a conversation is started and a method called get_response() is called. This method makes openai use the text from the user's input to generate a text response through the ChatCompletion.create() method. Finally, pyttsx3 is used to turn that text into outputted speech that is heard from the USB speaker. 
+
+One special feature is that if the user has already started a conversation earlier in the program (by saying "Tom"), then the user doesn't need to continue saying "Tom" to keep generating responses from the voice assistant. To end a discussion, the user just has to say "end discussion/stop discussion" and the AI will stop responding until the user says "Tom" again.
+
+<h3>Challenges and What I Learned</h3>
+
+My main struggle in BSE was the hardware as I had never dealt with circuitry before and barely used any tools before while doing robotics since I always coded. I eventually learned it with the help of the instructors and became comfortable with making circuitry for my project, using items like the relay module, and using tools like the solder. Another challenge I had was getting the Raspberry Pi interface to be stable, as it was continously freezing which caused annoying interruptions during my code tests, dependency installations, etc. I figured out that I had to use a hotspot during my 3rd milestone, which luckily was the only time I was really coding. 
+
+My biggest triumphs overall from BSE were learning how to deal with circuits, learning how to use a Raspberry Pi, and creating a good, working project at BSE. Some key topics I learned at BSE were learning how to use speech to text and text to speech modules and most importantly AI modules. 
+
+<h3>What's Next</h3>
+
+I would like to expand on my project by allowing the user to continue previous conversations and allow the AI to use context from previous conversations. This would be so that the user doesn't have to restate everything from a previous conversation again. This would also make the AI more familiar with the user, what they talk about, and their preferences.
 
 # Second Milestone
 
@@ -30,7 +37,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <h3>Summary</h3>
 
-During my second milestone, I added the entire circuitry. This includes a relay module connected to the Raspberry Pi which recieves the high/low signals from the Raspberry Pi. The relay module controls electricity flow from the battery pack back to the LED circuit on the breadboard. Essentially if it's high, then electricity is flowed back into the LED circuit from the battery pack, but if it's low, then the LED circuit doesn't get and power back from the battery pack. The LED is connected to resistors to prevent it from taking too much voltage in, as the battery pack provides 6V of power.
+During my second milestone, I added the entire circuitry. This includes a relay module connected to the Raspberry Pi which recieves the high/low signals from the Raspberry Pi. The relay module controls electricity flow from the battery pack back to the LED circuit on the breadboard. Essentially if it's high, then electricity is flowed back into the LED circuit from the battery pack, but if it's low, then the LED circuit doesn't get and power back from the battery pack. The LED is connected to resistors to prevent it from taking too much voltage in, as the battery pack provides 6V of power. I also installed all the dependencies onto my Raspberry Pi so I can use certain libraries when I code during my next milestone.
 
 The simplicity at the core of the project constrasted to the complex errors that are outputted really suprise me. This is because you can find an error that doesn't seem to relate to anything on your project yet something totally random causes it. For example, I had a wire plugged into the wrong pin but an error related to my USB mic was being outputted. And this is all while you have only a few parts connected.
 
