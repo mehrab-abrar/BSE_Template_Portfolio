@@ -69,7 +69,7 @@ In the future I will install the dependencies onto the Raspberry Pi and build th
 # Schematics
 <img src="voiceassistantschematic.png" width="600" height="400" />
 
-# Code
+<h2>Code</h2>
 
 ```python
 import lgpio
