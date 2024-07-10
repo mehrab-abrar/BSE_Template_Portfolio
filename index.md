@@ -71,7 +71,7 @@ In the future I will install the dependencies onto the Raspberry Pi and build th
 
 # Code
 
-```c++
+```python
 import lgpio
 import speech_recognition as sr
 import pyttsx3
