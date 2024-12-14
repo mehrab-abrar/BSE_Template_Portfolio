@@ -1,1 +1,2 @@
-[![BlueStampEngineering](Rushil.jpg)](./index2.html)
+### Voice Assistant with AI
+[![Project 1](Rushil.jpg)](./index2.html)
